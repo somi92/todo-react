@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './App.css';
+import 'bootstrap-css-only';
 
 const logo = require('./logo.svg');
 
