@@ -12,14 +12,19 @@
   },
   "scripts": {
     "start": "react-scripts-ts start",
+    "prebuild": "del-cli build -f",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "server": "http-server ./build -p 9081",
+    "prod": "npm run build && npm run server"
   },
   "devDependencies": {
     "@types/jest": "^21.1.9",
     "@types/node": "^8.5.2",
     "@types/react": "^16.0.31",
-    "@types/react-dom": "^16.0.3"
+    "@types/react-dom": "^16.0.3",
+    "del-cli": "^1.1.0",
+    "http-server": "^0.10.0"
   }
 }
