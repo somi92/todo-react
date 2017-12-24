@@ -31,6 +31,21 @@
   margin: auto;
 }
 
+.Todo-add {
+  width: 50%;
+  margin: auto;
+  height: 90px;
+}
+
+.Todo-add-input {
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+.Todo-button {
+  float: right;
+}
+
 .Todo-item {
   margin-top: 1em;
   padding: 0.5em 2em;
