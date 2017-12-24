@@ -34,10 +34,12 @@ export default class AddTodo extends React.Component<AddTodoProps, AddTodoState>
         );
     }
 
+    // tslint:disable-next-line:no-any
     private _handleOnChange = (e: any) => {
         this.setState({ text: e.target.value });
     }
 
+    // tslint:disable-next-line:no-any
     private _handleOnKeyPress = (e: any) => {
         if (e.which === 13 && this.state.text) {
             this._addTodo();
